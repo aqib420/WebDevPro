@@ -39,6 +39,7 @@
         color: white;
         text-decoration: none;
         padding: 5px 15px;
+        padding-top: 10px;
         position: relative;
       }
       .nav1 a::after {
@@ -101,6 +102,57 @@
       .nav2 .login-btn:hover {
         background-color: #3cac25;
         color: rgb(0, 0, 0);
+        cursor: pointer;
+        border: 1px solid black;
+      }
+      .nav3 {
+        background-color: #82dab9;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .nav3 ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+      }
+      .nav3 li {
+        margin-bottom: 0px;
+      }
+      .nav3 a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        display: block;
+      }
+      .nav3 .dropdown-content {
+        display: none;
+        font-size: small;
+        padding: 10px;
+      }
+      .nav3 .dropdown:hover .dropdown-content {
+        display: block;
+        position: absolute;
+        background-color: #5acba2;
+        min-width: 150px;
+      }
+      .nav3 a:hover {
+        background-color: #8beee6;
+        border-radius: 8px;
+        border: 1px solid black;
+        font-size: large;
+      }
+      .nav3 .login-btn {
+        border-radius: 0px;
+        border: 0;
+        padding: 5px 15px;
+        background-color: #728c80;
+      }
+      .nav3 .login-btn:hover {
+        background-color: #8beee6;
         cursor: pointer;
         border: 1px solid black;
       }

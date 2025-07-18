@@ -48,13 +48,13 @@
         width: 100%;
         bottom: 0;
         left: 0;
-        background-color: #4d94df;
+        background-color: #056fdf;
         transform: scaleX(0);
         transition: transform 0.3s ease-in-out;
       }
 
       .nav1 a:hover::after {
-        transform: scaleX();
+        transform: scaleX(1);
       }
       .nav1 .login-btn {
         border-radius: 8px;
@@ -64,6 +64,45 @@
       }
       .nav1 .login-btn:hover {
         background-color: green;
+      }
+      .nav2 {
+        background-color: rgb(32, 97, 32);
+        width: 200px;
+        padding: 20px;
+      }
+      .nav2 ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+      }
+      .nav2 li {
+        margin-bottom: 12px;
+      }
+      .nav2 a {
+        text-decoration: none;
+        color: white;
+        display: block;
+
+        width: 100%;
+      }
+      .nav2 a:hover {
+        cursor: pointer;
+        background-color: rgb(28, 151, 28);
+      }
+      .nav2 .login-btn {
+        border-radius: 8px;
+        border: 1px;
+        padding: 3px 15px;
+        color: rgb(0, 0, 0);
+        background-color: #9ccb8d;
+        width: 100%;
+        padding: 8px;
+      }
+      .nav2 .login-btn:hover {
+        background-color: #3cac25;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        border: 1px solid black;
       }
     </style>
   </head>
@@ -80,7 +119,7 @@
       </nav>
     </div>
     <div class="nav-container">
-      <h2>Variation 2: Horizontal with underline effect</h2>
+      <h2>Variation 2: Verticle with hover effect</h2>
       <nav class="nav2">
         <ul>
           <li><a href="#">Home</a></li>

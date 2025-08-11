@@ -3,17 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Assignment</title>
+    <title>VoyageVista</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+HU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
     />
+
     <style>
       body {
         padding: 0;
         margin: 0;
         height: 100vh;
         background-color: #1a1a1a;
+      }
+      .container-my-4 {
+        padding: 30px;
       }
       .carousel-inner {
         height: auto;
@@ -28,11 +36,70 @@
         justify-content: space-around;
         flex-wrap: wrap;
         height: auto;
+        margin-bottom: 60px;
+      }
+      .card-body {
+        background-color: #353535;
+        color: white;
+      }
+      .card-body > .btn {
+        background-color: #706a6a;
+        border: none;
+        width: 100%;
+      }
+      .btn:hover {
+        background-color: #1a1a1a;
+      }
+      .display-2 {
+        color: antiquewhite;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      }
+      em {
+        font-size: 3rem;
+      }
+      @media (max-width: 900px) {
+        .cardsJ {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+        .card {
+          margin-bottom: 20px;
+        }
+      }
+      .brand {
+        font-family: "Playwrite HU", cursive;
+        font-size: large;
+        text-align: right;
+        font-style: italic;
+        color: gray;
+      }
+      .heading {
+        display: inline-block; /* shrink to fit content */
+        text-align: center;
+        position: relative;
+        text-align: center;
+      }
+      .center {
+        display: flex;
+        justify-content: center;
       }
     </style>
   </head>
   <body>
-    <div class="container my-4">
+    <div class="center">
+      <div class="heading">
+        <h1 class="display-2">Explore the World With Us ✈️</h1>
+        <h2 class="brand display-2">@VoyageVista</h2>
+      </div>
+    </div>
+
+    <div class="container-my-4">
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button
@@ -102,49 +169,67 @@
 
     <div class="cardsJ">
       <div class="card" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
+        <img
+          src="https://images.pexels.com/photos/29832469/pexels-photo-29832469.jpeg"
+          class="card-img-top"
+          alt="paris-gateway"
+        />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">Paris Gateway</h5>
           <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content.
+            Discover the romance of Paris with guided city tours, a visit to the
+            Eiffel Tower, and a cruise along the Seine. Enjoy charming cafés,
+            world-class art museums, and cozy boutique hotels in the heart of
+            the city.
           </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-dark">Visit Now</a>
         </div>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
+        <img
+          src="https://images.pexels.com/photos/2531237/pexels-photo-2531237.jpeg"
+          class="card-img-top"
+          alt="..."
+        />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">Maldives Paradise</h5>
           <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content.
+            Relax on pristine white-sand beaches and swim in crystal-clear
+            turquoise waters. This luxury package includes overwater villa
+            accommodation, daily breakfast, sunset cruises, and snorkeling
+            adventures in vibrant coral reefs..
           </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-dark">Visit Now</a>
         </div>
       </div>
 
       <div class="card" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
+        <img
+          src="https://images.pexels.com/photos/19926258/pexels-photo-19926258.jpeg"
+          class="card-img-top"
+          alt="..."
+        />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">Japan Cherry Blossom Tour</h5>
           <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content.
+            Experience Japan’s springtime magic with visits to Tokyo, Kyoto, and
+            Osaka. Stroll through blooming sakura gardens, enjoy authentic
+            sushi, ride the famous bullet train, and explore historic temples
+            surrounded by breathtaking scenery.
           </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-dark">Visit Now</a>
         </div>
       </div>
     </div>
 
-    <footer class="text-white text-center">
-      &copy; 2025 Your Website. All rights reserved.
+    <footer class="text-white text-center" style="background-color: #353535">
+      &copy; Aquib Ansari. All rights reserved.
     </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     >
-      console.log("hello world")
+      // console.log("hello world")
     </script>
   </body>
 </html>

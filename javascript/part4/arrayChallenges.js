@@ -102,3 +102,4 @@ let isLondonList = cityBucketList.includes("London");
 // if (cityBucketList.includes("London")) {
 //   console.log("contains london");
 // }
+

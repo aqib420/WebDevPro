@@ -112,5 +112,24 @@ class Calculator {
 }
 
 let myCalc = new Calculator();
-// console.log(myCalc.add()); //error
+console.log(myCalc.add()); //error
 console.log(Calculator.add(3, 4));
+
+//Getters and Setters;
+
+class Employee {
+  set salary(value) {
+    if (value < 0) {
+      console.error("Salary cant be Negative");
+    }
+    this._salary = value;
+  }
+
+  get salary() {
+    return `$${this._salary}`;
+  }
+}
+
+let emp1 = new Employee();
+emp1.salary = 60000; // setter
+console.log(emp1.salary); // getter

@@ -133,3 +133,96 @@ class Employee {
 let emp1 = new Employee();
 emp1.salary = 60000; // setter
 console.log(emp1.salary); // getter
+
+//Question:
+class Vehicle {
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+  }
+  getDetails() {
+    returns`Make: [${this.make}], Model:[${this.model}]`;
+  }
+  move() {
+    return `The vehicle is moving`;
+  }
+  static idVehicle(obj) {
+    if (obj instanceof Vehicle) {
+      return True;
+    } else {
+      return False;
+    }
+  }
+}
+
+class Car extends Vehicle {
+  startEnginer() {
+    return `Enginer started`;
+  }
+  move() {
+    return `The car is driving`;
+  }
+}
+
+//Q2:
+// Task 1
+class BankAccount {
+  constructor(balance = 0) {
+    this._balance = balance;
+  }
+
+  get balance() {
+    return this._balance;
+  }
+
+  set balance(amount) {
+    if (amount < 0) {
+      throw new Error(`Balance cannot be negative`);
+    }
+    this._balance = amount;
+  }
+
+  deposit(amount) {
+    if (amount > 0) {
+      return (this._balance += amount);
+    } else {
+      throw new Error(`amount must be positive`);
+    }
+  }
+
+  withdraw(amount) {
+    if (amount > 0 && amount <= this._balance) {
+      return (this.balance -= amount);
+    } else {
+      throw new Error(`Insufficient funds`);
+    }
+  }
+}
+
+// Task 2
+class Shape {
+  area() {
+    return 0;
+  }
+}
+
+class Circle extends Shape {
+  constructor(radius) {
+    super();
+    this.radius = radius;
+  }
+  area() {
+    return Math.PI * this.radius ** 2;
+  }
+}
+
+class Rectangle extends Shape {
+  constructor(length, width) {
+    super();
+    this.length = length;
+    this.width = width;
+  }
+  area() {
+    return this.length * this.width;
+  }
+}

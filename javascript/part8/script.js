@@ -1,4 +1,4 @@
-//example-1
+//example-1 Accessing DOM Elements
 document
   .getElementById("changeTextButton") //now i have a reference for this button;
   .addEventListener("click", function () {
@@ -7,7 +7,7 @@ document
     para.textContent = "this is a changed paragraph!!";
   });
 
-//example-2
+//example-2 Traversing the DOM
 document
   .getElementById("highlightFirstCity")
   .addEventListener("click", function () {
@@ -15,7 +15,7 @@ document
     citiesList.firstElementChild.classList.add("highlight");
   });
 
-//example-3
+//example-3 Manipulating DOM Elements
 document.getElementById("changeOrder").addEventListener("click", function () {
   let type = document.getElementById("coffeeType");
   type.textContent = "Espresso";
@@ -23,14 +23,14 @@ document.getElementById("changeOrder").addEventListener("click", function () {
   type.style.padding = "5px";
 });
 
-//example-4
+//example-4 Creating and Inserting Elements
 document.getElementById("addNewItem").addEventListener("click", function () {
   let newItem = document.createElement("li");
   newItem.textContent = "Eggs";
   document.getElementById("shoppingList").appendChild(newItem);
 });
 
-//example-5
+//example-5 Removing DOM Elements
 document
   .getElementById("removeLastTask")
   .addEventListener("click", function () {

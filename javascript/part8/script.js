@@ -79,5 +79,6 @@ document
   .getElementById("toggleHighlight")
   .addEventListener("click", function () {
     let descriptionText = document.getElementById("descriptionText");
-    descriptionText.style.color = "green";
+    // descriptionText.style.color = "green";
+    descriptionText.classList.toggle("highlight");
   });
